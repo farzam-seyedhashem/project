@@ -1,0 +1,349 @@
+
+                      :root {
+                          --cardCarouselImageWidth: 400px;
+                          --cardCarouselItemWidth: 800px;
+                          --cardCarouselTransition: 0.6s;
+                      }
+
+/*
+Owl Carousel Styles
+*/
+.owl-carousel.gallery-carousel .owl-stage {
+    padding-left: 4rem !important;
+}
+
+.owl-carousel.full-carousel .owl-stage {
+    padding-left: 0 !important;
+}
+
+.owl-carousel.card-carousel .owl-stage {
+    padding-left: 1.5rem !important;
+}
+
+.owl-carousel.gallery_carousel .owl-stage-outer {
+    padding-left: 2rem !important;
+}
+
+.full_carousel_slide::before {
+    content: '';
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
+    z-index: 2;
+}
+
+@media screen and (min-width: 992px) {
+    .owl-carousel.card-carousel .owl-item .card-content {
+        width: var(--cardCarouselItemWidth);
+        /* width: var(--cardCarouselImageWidth);
+transition: width var(--cardCarouselTransition) var(--easeInEaseOutCubic);*/
+    }
+
+    .owl-carousel.card-carousel .owl-item .card-content img {
+        width: var(--cardCarouselImageWidth);
+        height: var(--cardCarouselImageWidth);
+    }
+
+    .owl-carousel.card-carousel .owl-item .card-content .card-text {
+        left: var(--cardCarouselImageWidth);
+        /*left: 0;
+transition: transform var(--cardCarouselTransition) var(--easeInEaseOutCubic);*/
+    }
+
+    /*.owl-carousel.card-carousel .owl-item.highlight,
+.owl-carousel.card-carousel .owl-item.highlight .card-content {
+width: var(--cardCarouselItemWidth);
+}
+.owl-carousel.card-carousel .owl-item.highlight .card-content .card-text {
+transform: translateX(var(--cardCarouselImageWidth));
+}*/
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+    position: absolute;
+    z-index: 4;
+    bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+    .owl-carousel.card-carousel .owl-nav.disabled,
+    .owl-carousel.card-carousel .owl-dots.disabled {
+        display: block !important;
+    }
+}
+
+.page-pdp .owl-carousel.full-carousel .owl-nav,
+.page-pdp .owl-carousel.full-carousel .owl-dots {
+    bottom: 5rem;
+}
+
+.pdp_carousel_container .owl-carousel.full-carousel .owl-nav,
+.pdp_carousel_container .owl-carousel.full-carousel .owl-dots {
+    bottom: 3rem;
+}
+
+.owl-carousel.gallery-carousel .owl-dots,
+.owl-carousel.gallery-carousel .owl-nav {
+    bottom: 3rem;
+}
+
+.owl-carousel.gallery_carousel .owl-dots,
+.owl-carousel.gallery_carousel .owl-nav {
+    bottom: 0;
+}
+
+.owl-carousel.card-carousel .owl-dots,
+.owl-carousel.card-carousel .owl-nav {
+    bottom: -8rem;
+}
+
+.owl-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-carousel .owl-nav {
+    right: 4rem;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    padding: 1rem !important;
+    color: #010205;
+}
+
+.owl-carousel .owl-nav button.owl-prev.disabled,
+.owl-carousel .owl-nav button.owl-next.disabled {
+    opacity: 0.5;
+}
+
+.owl-carousel .owl-dots button.owl-dot {
+    width: 5rem;
+    height: 2px;
+    background: rgba(1, 2, 5, 0.1);
+}
+
+.pdp_carousel_container .owl-carousel .owl-dots button.owl-dot {
+    width: 2rem;
+}
+
+#amenitiesGalleryCarousel.owl-carousel .owl-dots button.owl-dot {
+    width: 3rem;
+}
+
+.owl-carousel .owl-dots button.owl-dot.active {
+    background: #010205;
+}
+
+.owl-carousel.full-carousel .owl-nav button.owl-prev,
+.owl-carousel.full-carousel .owl-nav button.owl-next {
+    color: #ffffff;
+}
+
+.owl-carousel.full-carousel .owl-dots button.owl-dot {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.owl-carousel.full-carousel .owl-dots button.owl-dot.active {
+    background: #ffffff;
+}
+
+@media screen and (min-width: 1920px) {
+    .owl-carousel .owl-dots,
+    .owl-carousel .owl-nav {
+        bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .pdp_carousel_container .owl-carousel.full-carousel .owl-nav,
+    .pdp_carousel_container .owl-carousel.full-carousel .owl-dots {
+        bottom: 5rem;
+    }
+
+    .pdp_slide_content_inner {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pdp_carousel_container,
+    .pdp_slide {
+        max-height: calc(100vh - 208px);
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .pdp_carousel_container .owl-carousel.full-carousel .owl-dots,
+    #amenitiesCarousel .owl-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .owl-carousel .owl-dots {
+        transform: initial;
+        left: 4rem;
+    }
+
+    .pdp_carousel_container .owl-carousel .owl-dots {
+        display: none;
+    }
+
+    .pdp_carousel_container .owl-carousel .owl-nav,
+    .pdp_carousel_container .owl-carousel .owl-dots {
+        bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .owl-carousel.gallery-carousel .owl-stage {
+        padding-left: 1.5rem !important;
+    }
+
+    .owl-carousel.full-carousel .owl-stage {
+        padding-left: 0 !important;
+    }
+
+    .owl-carousel.gallery_carousel .owl-stage-outer {
+        padding-left: 1rem !important;
+    }
+
+    .owl-carousel .owl-dots {
+        display: none;
+    }
+
+    .owl-carousel .owl-nav {
+        left: 0.75rem;
+        bottom: 0.5rem;
+    }
+
+    .page-pdp .owl-carousel.full-carousel .owl-nav {
+        bottom: 4rem;
+    }
+
+    .page-pdp .pdp_carousel_container .owl-carousel.full-carousel .owl-nav,
+    .page-pdp .pdp_carousel_container .owl-carousel.full-carousel .owl-dots {
+        bottom: 0.5rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 0.75rem !important;
+    }
+
+    .owl-carousel.gallery-carousel .owl-nav {
+        bottom: 2rem;
+    }
+
+    .owl-carousel.card-carousel .owl-nav {
+        bottom: -5.5rem;
+    }
+}
+
+#overviewCarousel .owl-dots {
+    display: none;
+}
+
+@keyframes hotspotAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    30% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    55% {
+        transform: rotate(270deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    80% {
+        transform: rotate(360deg);
+    }
+}
+
+#overviewCarousel .carousel-hover-spot .hover-spot {
+    animation-name: hotspotAnimation;
+    animation-delay: 1.5s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#overviewCarousel .carousel-hover-spot-2 .hover-spot {
+    animation-name: hotspotAnimation;
+    animation-delay: 3s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#overviewCarousel .carousel-hover-spot:hover .hover-spot,
+#overviewCarousel .carousel-hover-spot-2:hover .hover-spot {
+    animation: initial;
+}
+
+.gallery-card-link .gallery-image {
+    transform: scale(1);
+    transition: transform var(--easeInEaseOutCubic) 1200ms;
+}
+
+.gallery-card-link:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+.residence_gallery_container.full_carousel_container {
+    opacity: 0;
+    transition: opacity 1.2s var(--easeInEaseOutCubic);
+}
+
+.residence_gallery_container.full_carousel_container.show {
+    left: 0;
+    /* opacity: 1;*/
+}
+
+.residence_gallery_container.full_carousel_container .owl-carousel {
+    opacity: 0;
+    transition: opacity 1.2s var(--easeInEaseOutCubic) 1.2s;
+}
+
+.owl-carousel .owl-stage-outer .owl-stage .owl-item:only-child .full_carousel_slide::before {
+    display: none;
+}
+
+.residence_gallery_container .owl-carousel .owl-dots button.owl-dot {
+    width: 3rem;
+}
+
+.cta-close {
+    display: none;
+    opacity: 0;
+    transition: opacity 1.2s var(--easeInEaseOutCubic) 1.2s;
+}
+
+.cta-close.show {
+    display: flex;
+    opacity: 1;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100dvh;
+}

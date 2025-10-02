@@ -1,0 +1,411 @@
+/* CSS Vars */
+:root {
+    --easeInEaseOutCubic: cubic-bezier(0.65, 0, 0.35, 1);
+    --color_richblue: #10103D;
+    --color_black: #000000;
+    --color_skyblue: #98D2DD;
+    --color_gold: #A18A6B;
+    --color_sand: #DBC0A8;
+    --color_lightgrey70: #E2DFDB;
+    --color_lightgrey30: #F3F1EF;
+    --color_white: #ffffff;
+    --color_red: #800000;
+    --font_heading: "OptimaLTPro Roman", sans-serif;
+    --font_body: "Graphik Regular", sans-serif;
+}
+@font-face {
+    font-family: 'iransansxv';
+    src: url("../assets/font/IRANSansXV.woff2");
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap
+}
+*{
+    font-family: 'iransansxv', sans-serif !important;
+}
+/* Make text look crisper and more legible in all browsers */
+body {
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+}
+
+/* Remove margins on headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext > :last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+    pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+    pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium, .container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/*
+Make the following elements inherit typography styles from the parent and not have hardcoded values.
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 767px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+
+.margin-0 {
+    margin: 0rem !important;
+}
+
+.padding-0 {
+    padding: 0rem !important;
+}
+
+.spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+.margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+/* Form fields */
+.w-input,
+.w-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color_richblue);
+    border-radius: 0;
+}
+
+.footer_form .w-input {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-label.hide {
+    opacity: 0;
+    position: absolute;
+    height: 1px;
+    display: inline-block;
+    width: 1px;
+    overflow: hidden;
+}
+
+.w-input,
+.w-select,
+input::placeholder {
+    color: var(--color_richblue) !important;
+    opacity: 1 !important;
+    font-family: var(--font_heading);
+    font-size: 1.5rem;
+}
+
+.w-input.error,
+.w-input.error::placeholder {
+    color: var(--color_red) !important;
+    border-color: var(--color_red);
+}
+
+.w-input.text-size-footer,
+.w-input.text-size-footer::placeholder {
+    font-size: 1rem !important;
+    color: var(--color_lightgrey30) !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    .w-input,
+    .w-select,
+    input::placeholder {
+        font-size: 1rem;
+    }
+}
+
+.footer_form input::placeholder {
+    color: var(--color_white) !important;
+    opacity: 1;
+    font-size: inherit !important;
+}
+
+/* Horizontal tab menu scroll styles */
+@media screen and (max-width: 767px) {
+    .h_scroll_container {
+        position: relative;
+    }
+
+    .h_scroll_container::after {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #171717;
+    }
+
+    .h_scroll {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scroll-padding-left: 1rem;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2rem;
+    }
+
+    .h_scroll::-webkit-scrollbar {
+        width: 88vw;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .h_scroll::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.button svg.btn,
+.button svg.btn rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.button svg.btn rect {
+    stroke: var(--color_white);
+    stroke-width: 4;
+    transition: 2500ms;
+    stroke-dasharray: 480;
+    stroke-dashoffset: 480;
+    opacity: 0;
+}
+
+.button.is-long svg.btn rect {
+    transition: 2500ms;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+}
+
+.button.is-secondary svg.btn rect {
+    stroke: var(--color_richblue);
+}
+
+.button:hover svg.btn rect {
+    stroke-dashoffset: 0;
+    opacity: 1;
+}
+
+.button.enquire_cta svg.btn rect {
+    stroke: none;
+}
+
+/* .article-heading .article-title */
+.content-heading,
+.content-text,
+.pdp_hero_heading {
+    text-wrap: balance;
+}
+
+.hotspot_cta .hotspot_text {
+    opacity: 0;
+    transition: opacity 1.2s var(--easeInEaseOutCubic);
+}
+
+.hotspot_cta .hotspot,
+.hotspot_cta .icon-more {
+    transition: transform 0.6s var(--easeInEaseOutCubic);
+}
+
+.hotspot_cta:hover .hotspot_text {
+    opacity: 1;
+}
+
+.hotspot_cta:hover .icon-more,
+.hotspot_cta.show .icon-more {
+    transform: rotate(90deg);
+}
+
+.hotspot_cta:hover .hotspot,
+.hotspot_cta.show .hotspot {
+    transform: scale(1.2);
+}
+
+.hotspot_cta.show .hotspot_text {
+    opacity: 1 !important;
+}
+
+.residence_image_veil {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity 1.2s var(--easeInEaseOutCubic);
+}
+
+.residence_image_veil.show {
+    opacity: 0.35;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1280px) {
+    .residence_hotspots_panel {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .residence_hotspots_panel {
+        width: 100vw;
+    }
+}
+.card-content:hover .text-hover{
+    display: block;
+}
+.card-content .text-hover{
+    display: none;
+}

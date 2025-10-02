@@ -1,0 +1,223 @@
+.property-marker {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.property-inactive-marker {
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.opj-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de432cda7a935456b20_opj-point.svg');
+}
+
+.orla-infinity-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de5f89e5920710fafd0_orla-infinity-point.svg');
+}
+
+.lana-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de45880d7d2b63bad50_lana-point.svg');
+}
+
+.orla-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de48d58d187102ce97e_prla-point.svg');
+}
+
+.vela-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de4fa0da49fdf93f634_vela-point.svg');
+}
+
+.opus-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de49c7acecc2a5205b5_opus-point.svg');
+}
+
+.ava-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651b0de4ff6def256c463f9f_ava-point.svg');
+}
+
+.anwa-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c7217a9431a599d98495_anwa-point.svg');
+}
+
+.anwa-aria-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c7201bab5f3860ea0169_anwa-aria-point.svg');
+}
+
+.sterling-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c720b3b211dc195b37e6_sterling-point.svg');
+}
+
+.vela-viento-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/655dd253e1e3634621fe29ff_vela-viento-point.svg')
+}
+
+.binary-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/65773a24cd848a2270bb771f_binary-point.svg');
+}
+
+.one-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/657855f64b1ef117cddc1446_ONE-point.svg');
+}
+
+.bayswater-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/657855f6e43defb3a1277045_bayswater-point.svg');
+}
+
+.alba-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/66f56647cf5ae2db617573eb_alba-map-icon.svg');
+}
+
+.enara-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/66c722da26062efd85b82ac7_enara-location-icon-2.svg');
+}
+
+.alba-resort-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6811b54ea3d9ed6fcd60ebb0_alba-resorts-map-icon.png');
+}
+
+.lumena-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6853df819532b9bd28cca11d_lumena-map-150x150%20(1).svg');
+}
+
+.marasi-bay-marker {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/685535769908458c23bb5de2_marasi-bay-map-150x150.svg');
+}
+
+.bayswater-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/657855f6a5568b2b9bdff5ba_bayswater-point-inactive.svg');
+}
+
+.one-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/657855f58086346e7befea9a_ONE-point-inactive.svg');
+}
+
+.binary-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/65773a244c1540dba126b821_binary-point-inactive.svg');
+}
+
+.vela-viento-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/655dd271be948413ff907512_vela-viento-point-inactive.svg')
+}
+
+.opj-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a42e14d009ba4e7800_opj-inactive.svg');
+}
+
+.orla-infinity-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a40f087bd655c08930_orla-infinity-inactive.svg');
+}
+
+.lana-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a4b2d64dcde349915b_lana-inactive.svg');
+}
+
+.orla-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a54e11175d69a54e36_orla-inactive.svg');
+}
+
+.vela-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a489228d58545b9c2b_vela-inactive.svg');
+}
+
+.opus-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a4cd7e9e5926fe12aa_opus-inactive.svg');
+}
+
+.ava-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6526e3a4aa915949b6a1642b_ava-inactive.svg');
+}
+
+.anwa-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c7201bab5f3860ea0141_anwa-point-inactive.svg');
+}
+
+.anwa-aria-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c7204031efb344b95e8a_anwa-aria-point-inactive.svg');
+}
+
+.sterling-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6544c720f00a24ab8c246d7a_sterling-point-inactive.svg');
+}
+
+.alba-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/66e98b098f9cc6d1fb11cc12_alba-map-icon%2026x26.svg');
+}
+
+.enara-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/66c7204976f366a2c9a16f07_enara-location-icon.svg');
+}
+
+.alba-resort-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6811b54ebfa33f809706b7d7_alba-resorts-map-icon%2026x26.png');
+}
+
+.marasi-bay-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6855357e860d1da7b269db9f_marasi-bay-map-26x26.svg');
+}
+
+.lumena-marker-inactive {
+    background-image: url('https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6853df94b89d2a2d2fc236ff_lumena-map-26x26.svg');
+}
+
+.landmark-marker {
+    background-color: #A18A6B;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shopping-marker {
+    background-color: #DBC0A8;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.restaurant-marker {
+    background-color: #A18A6B;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.district-marker {
+    background-color: #98D2DD;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 350px;
+    z-index: 1100;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'iransansxv', sans-serif;
+    padding: 20px;
+}
+
+.mapboxgl-popup-content h3 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.mapboxgl-popup-content p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin: 1rem 0 0 0;
+}
